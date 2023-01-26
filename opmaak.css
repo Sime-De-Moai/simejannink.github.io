@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+}
+.sec-body {
+  background-color: rgb(20, 20, 20);
+}
+.thrd-body {
+  background-color: rgb(20, 20, 20);
+}
+
+nav ul {
+  padding-left: 0vw;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  top: 0px;
+  padding-top: 1vw;
+  padding-bottom: 4vw;
+  background-image: linear-gradient(rgba(20, 20, 20, 1), 90%, rgba(20, 20, 20, 0));
+}
+nav li {
+  display: inline-block;
+  width: 10%;
+}
+nav li a {
+  font-family: 'Signika Negative', sans-serif;
+  color: #ff1e4b;
+  font-size: 1vw;
+  text-decoration: none;
+  filter: blur(0.05vw);
+}
+nav li a:hover {
+  color: #d33757;
+}
+
+.containerwave {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.textwave {
+  font-family: 'Signika Negative', sans-serif;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  filter: blur(0.15vw);
+}
+.textwave span {
+  padding: 0 0.5vw;
+  font-size: 5vw;
+  animation: zoomup 0.9s ease infinite;
+  animation-delay: calc(250ms * var(--i));
+  display: inline-block;
+  color: red;
+}
+@keyframes zoomup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25) translateY(-3vw);
+    opacity: 0;
+  }
+}
+
+article {
+  font-family: 'Signika Negative', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: red;
+}
+
+footer {
+  background-image: linear-gradient(rgba(20, 20, 20, 0), rgba(20, 20, 20, 1));
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5vw;
+}
