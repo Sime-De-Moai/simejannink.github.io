@@ -20,14 +20,6 @@ window.smoothScroll = function(target) {
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
 
-function copy() {
-    var copyText = document.getElementById("mail")
-    copyText.select();
-    copyText.setSelectionRange(0,99999);
-    navigator.clipboard.writeText(copyText.value);
-    alert("Copied the mail.");
-}
-
 function change_1()
 {
 document.getElementById("h_1").style.visibility="visible";
