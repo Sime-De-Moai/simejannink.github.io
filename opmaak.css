@@ -1,14 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Notable&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Noto+Sans+Zanabazar+Square&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&family=Bungee+Hairline&family=Noto+Sans+Zanabazar+Square&family=Rubik+Mono+One&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: crosshair;
 }
 
 body {
@@ -97,6 +92,14 @@ article {
   background-color:rgba(0, 0, 0, 0.5);
   border-style: dashed;
   padding: 10px 10px 10px;
+}
+
+#mail {
+  font-size: 2vw;
+  color: rgb(255, 187, 0);
+}
+#mail:hover {
+  color: rgb(133, 98, 0);
 }
 
 footer {
@@ -232,6 +235,14 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+.wrap_10 {
+  margin-top: 10px;
+  position: relative;
+  height: 31,25vw;
+  width: 37,5vw;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media only screen and (max-device-width: 500px) {
   .p_1 {
@@ -246,16 +257,8 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.72);
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
   border-radius: 4.8%;
-}
-.wrap_1:hover .p_1 {
-  visibility: visible;
-  opacity: 1;
 }
 .p_2 {
   position: absolute;
@@ -263,16 +266,8 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.72);
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
   border-radius: 4.8%;
-}
-.wrap_2:hover .p_2 {
-  visibility: visible;
-  opacity: 1;
 }
 .p_3 {
   position: absolute;
@@ -280,16 +275,8 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.72);
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
   border-radius: 4.8%;
-}
-.wrap_3:hover .p_3 {
-  visibility: visible;
-  opacity: 1;
 }
 .p_4 {
   position: absolute;
@@ -297,16 +284,8 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.72);
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
   border-radius: 4.8%;
-}
-.wrap_4:hover .p_4 {
-  visibility: visible;
-  opacity: 1;
 }
 .p_5 {
   position: absolute;
@@ -314,16 +293,8 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.72);
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
   border-radius: 4.8%;
-}
-.wrap_5:hover .p_5 {
-  visibility: visible;
-  opacity: 1;
 }
 .p_6 {
   position: absolute;
@@ -331,16 +302,8 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.72);
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
   border-radius: 4.8%;
-}
-.wrap_6:hover .p_6 {
-  visibility: visible;
-  opacity: 1;
 }
 .p_7 {
   position: absolute;
@@ -348,16 +311,8 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.72);
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
   border-radius: 4.8%;
-}
-.wrap_7:hover .p_7 {
-  visibility: visible;
-  opacity: 1;
 }
 .p_8 {
   position: absolute;
@@ -365,16 +320,8 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.72);
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
   border-radius: 4.8%;
-}
-.wrap_8:hover .p_8 {
-  visibility: visible;
-  opacity: 1;
 }
 .p_9 {
   position: absolute;
@@ -382,17 +329,19 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.72);
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
   border-radius: 4.8%;
 }
-.wrap_9:hover .p_9 {
-  visibility: visible;
-  opacity: 1;
+.p_10 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  border-radius: 4.8%;
 }
+
 
 .sub {
   background-color: rgba(0, 0, 0, 0.85);

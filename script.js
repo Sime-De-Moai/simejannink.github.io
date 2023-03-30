@@ -20,6 +20,14 @@ window.smoothScroll = function(target) {
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
 
+function copy() {
+    var copyText = document.getElementById("mail")
+    copyText.select();
+    copyText.setSelectionRange(0,99999);
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied the mail.")
+}
+
 function change_1()
 {
 document.getElementById("h_1").style.visibility="visible";
@@ -103,4 +111,13 @@ document.getElementById("h_9").style.visibility="visible";
 function changeB_9()
 {
 document.getElementById("h_9").style.visibility="hidden";
+}
+
+function change_10()
+{
+document.getElementById("h_10").style.visibility="visible";
+}
+function changeB_10()
+{
+document.getElementById("h_10").style.visibility="hidden";
 }
