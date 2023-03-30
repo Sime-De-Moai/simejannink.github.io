@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Noto+Sans+Zanabazar+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
 
 * {
   margin: 0;
@@ -11,7 +15,7 @@ body {
   background-color: rgb(20, 20, 20);
   background-image: url(/IMG/signal-2023-03-07-120847_002.jpg);
   background-repeat: no-repeat;
-  background-position-y: 7vw;
+  background-position-y: 112px  ;
   background-attachment: fixed;
 }
 .sec-body {
@@ -35,66 +39,49 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  width: 10%;
+  width: 20%;
 }
-nav li a {
+nav li a button{
   font-family: 'Signika Negative', sans-serif;
   color: white;
-  font-size: 1vw;
+  font-size: 13px;
   text-decoration: none;
-  filter: blur(0.04vw);
 }
-nav li a:hover {
+nav li a button:hover {
   color: white;
 }
 
-.containerwave {
-  min-height: 75vw;
+h3 {
+  font-family:'Rubik Mono One', sans-serif;
+  color: white;
+  padding-top: 190px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
   width: 100%;
-  padding-bottom: 100px;
+  margin-bottom: 10px;
+  font-size: 5vw;
+  letter-spacing: 10px;
 }
-.textwave {
-  font-family: 'Signika Negative', sans-serif;
+
+h1 {
+  font-size: 4vw;
+  font-family: 'Rubik Mono One', sans-serif;
+  position: relative;
+  justify-content: right;
+  display: flex;
+  color: #fff;
+  margin-bottom: 220px;
+  margin-right: 5px;
+}
+
+h2 {
   position: relative;
   justify-content: center;
-  align-items: center;
   display: flex;
-  filter: blur(0.09vw);
-}
-.textwave span {
-  padding: 0 0.5vw;
-  font-size: 5vw;
-  animation: zoomup 0.9s ease infinite;
-  animation-delay: calc(250ms * var(--i));
-  display: inline-block;
-  color: white;
-}
-@keyframes zoomup {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.25) translateY(-3vw);
-    opacity: 0;
-  }
-}
-
-.aroundme {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-}
-.aboutme {
-  width: 50%;
-  height: 100%;
-  color: red;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #fff;
+  word-spacing: 130px;
+  font-size: 2vw;
 }
 
 article {
@@ -105,6 +92,11 @@ article {
   margin-top: 10px;
   max-width: 75%; 
   text-align: center;
+  margin-bottom: 35px;
+  font-size: 2vw;
+  background-color:rgba(0, 0, 0, 0.5);
+  border-style: dashed;
+  padding: 10px 10px 10px;
 }
 
 footer {
@@ -121,6 +113,7 @@ footer {
   flex-wrap: wrap;
   padding: 0px 4px;
   justify-content: center;
+  margin-bottom: 4vw;
 }
 .column {
   flex: 25%;
@@ -146,6 +139,17 @@ footer {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+button:hover {
+  color: #686868;
 }
 
 p {
@@ -229,6 +233,13 @@ p {
   margin-right: auto;
 }
 
+@media only screen and (max-device-width: 500px) {
+  .p_1 {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 .p_1 {
   position: absolute;
   top: 0;
@@ -240,6 +251,7 @@ p {
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
+  border-radius: 4.8%;
 }
 .wrap_1:hover .p_1 {
   visibility: visible;
@@ -256,6 +268,7 @@ p {
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
+  border-radius: 4.8%;
 }
 .wrap_2:hover .p_2 {
   visibility: visible;
@@ -272,6 +285,7 @@ p {
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
+  border-radius: 4.8%;
 }
 .wrap_3:hover .p_3 {
   visibility: visible;
@@ -288,6 +302,7 @@ p {
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
+  border-radius: 4.8%;
 }
 .wrap_4:hover .p_4 {
   visibility: visible;
@@ -304,6 +319,7 @@ p {
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
+  border-radius: 4.8%;
 }
 .wrap_5:hover .p_5 {
   visibility: visible;
@@ -320,6 +336,7 @@ p {
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
+  border-radius: 4.8%;
 }
 .wrap_6:hover .p_6 {
   visibility: visible;
@@ -336,6 +353,7 @@ p {
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
+  border-radius: 4.8%;
 }
 .wrap_7:hover .p_7 {
   visibility: visible;
@@ -352,6 +370,7 @@ p {
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
+  border-radius: 4.8%;
 }
 .wrap_8:hover .p_8 {
   visibility: visible;
@@ -368,10 +387,38 @@ p {
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
+  border-radius: 4.8%;
 }
 .wrap_9:hover .p_9 {
   visibility: visible;
   opacity: 1;
 }
 
-
+.sub {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin-top: 150px;
+  padding: 20px 20px 20px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 5%;
+  border-style: dashed;
+}
+.sub button {
+  color: rgb(255, 187, 0);
+}
+.sub button:hover {
+  color: rgb(133, 98, 0);
+}
+.column button {
+  color: rgb(255, 187, 0);
+}
+.column button:hover {
+  color: rgb(133, 98, 0);
+}
